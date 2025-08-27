@@ -1,0 +1,11 @@
+body {
+    background-image:linear-gradient(to left, #0c00af, #0099ff);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
