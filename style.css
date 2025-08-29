@@ -8,20 +8,6 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
-
-.logo {
-  font-family: 'Poppins', sans-serif;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 150px;
-  font-weight: 700;
-  letter-spacing: 3px;
-  text-align: center;
-}
-
