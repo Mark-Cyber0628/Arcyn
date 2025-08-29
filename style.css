@@ -400,3 +400,76 @@ nav {
 }
 
 
+/* --- Mobilos kiegészítés */
+@media (max-width: 600px) {
+  .logo {
+    font-size: 48px;
+    height: 120px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .nav-links {
+    gap: 18px;
+    font-size: 15px;
+  }
+  nav {
+    padding: 10px 0;
+    margin-top: 0;
+  }
+}
+@media (max-width: 600px) {
+  #home {
+    max-width: 98vw;
+    margin: 30px auto;
+    padding: 18px 8px;
+    font-size: 1rem;
+  }
+  #home h2 {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 600px) {
+  .project-card {
+    padding: 12px;
+    font-size: 0.95rem;
+    min-width: 90vw;
+    max-width: 98vw;
+  }
+  #projects {
+    padding: 10px 2vw;
+  }
+  #projects h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  #contact {
+    padding: 10px 2vw;
+  }
+  #contact h2 {
+    font-size: 1.5rem;
+  }
+  #contact-form {
+    padding: 10px;
+    gap: 8px;
+  }
+  #contact-form input,
+  #contact-form textarea {
+    font-size: 0.95rem;
+    padding: 8px 10px;
+  }
+  #contact-form button {
+    font-size: 1rem;
+    padding: 10px 14px;
+  }
+}
+@media (max-width: 600px) {
+  #back-to-top {
+    width: 38px;
+    height: 38px;
+    font-size: 1.1rem;
+    bottom: 16px;
+    right: 16px;
+  }
+}
