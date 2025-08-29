@@ -249,3 +249,104 @@ nav {
     transform: translateY(0);
   }
 }
+
+/* --- Kapcsolat szekció --- */
+#contact {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 40px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Cím */
+#contact h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #00ccff;
+  text-shadow: 
+    0 0 10px rgba(0, 204, 255, 0.7),
+    0 0 20px rgba(0, 204, 255, 0.5),
+    0 0 30px rgba(0, 204, 255, 0.3);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+/* Űrlap */
+#contact-form {
+  background: rgba(0, 0, 0, 0.55); /* üveges fekete */
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1.5s ease-out forwards;
+  animation-delay: 0.3s; /* késleltetés a cím után */
+}
+
+/* Címkék és mezők */
+#contact-form label {
+  text-align: left;
+  font-weight: 600;
+  color: #ccc;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  background: rgba(0, 204, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 204, 255, 0.6);
+}
+
+/* Gomb */
+#contact-form button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #00ccff;
+  color: #000;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#contact-form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 204, 255, 0.7);
+}
+
+/* Reszponzív */
+@media (max-width: 600px) {
+  #contact-form {
+    padding: 20px;
+  }
+}
+
+/* --- FadeInUp animáció (újra) --- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
