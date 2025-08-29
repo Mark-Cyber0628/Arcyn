@@ -88,35 +88,50 @@ nav {
   color: #00ccff;
   transform: scale(1.2);  /* enyhe nagyítás hoverre */
 }
-
-.intro {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 80px 20px;
-}
-
-.intro-box {
+/* --- Bemutatkozó szekció --- */
+#home {
   max-width: 900px;
-  background: rgba(0, 0, 0, 0.5); /* átlátszó fekete */
-  backdrop-filter: blur(8px);      /* üveges hatás */
+  margin: 100px auto;         /* középre igazítás + hely a logótól */
+  padding: 40px 50px;
+  background: rgba(0, 0, 0, 0.55);  /* átlátszó fekete háttér */
   border-radius: 20px;
-  padding: 40px;
-  color: #fff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px); /* üveges hatás */
+  color: #ffffff;
   line-height: 1.8;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-  animation: fadeIn 2s ease;
-}
-
-.intro-box h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #00ccff;
-  text-align: center;
-}
-
-.intro-box p {
-  margin-bottom: 18px;
   font-size: 1.1rem;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+/* Cím kiemelése */
+#home h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00ccff; /* kék kiemelés */
+  text-shadow: 0 0 15px rgba(0, 204, 255, 0.8);
+}
+
+/* Bekezdések */
+#home p {
+  margin-bottom: 20px;
   text-align: justify;
+}
+
+/* Kulcsszó kiemelés */
+#home strong {
+  color: #00eaff;
+  font-weight: bold;
+}
+
+/* Belépő animáció */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
