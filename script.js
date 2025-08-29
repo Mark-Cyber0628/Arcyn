@@ -1,4 +1,5 @@
 const container = document.getElementById('projects-container');
+const projects = []
 
 projects.forEach((proj, index) => {
   const card = document.createElement('div');
@@ -10,11 +11,14 @@ projects.forEach((proj, index) => {
   `;
   container.appendChild(card);
 });
-// backToTop.js
+
+// Back to top gomb
 document.addEventListener('DOMContentLoaded', () => {
   const btn = document.getElementById('back-to-top');
 
-  // Megjelenítés scroll alapján
+  if (!btn) return; // Ha nincs gomb, ne csináljon hibát
+
+  // Gomb megjelenítése scroll alapján
   window.addEventListener('scroll', () => {
     if (window.scrollY > 300) {
       btn.classList.add('show');
@@ -23,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Klikk vissza a tetejére
+  // Smooth scroll vissza a tetejére
   btn.addEventListener('click', () => {
     window.scrollTo({
       top: 0,
