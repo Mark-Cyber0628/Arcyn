@@ -1,6 +1,7 @@
 const container = document.getElementById('projects-container');
 const projects = []
 
+
 projects.forEach((proj, index) => {
   const card = document.createElement('div');
   card.classList.add('project-card');
@@ -35,3 +36,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+// Betöltjük a projects.json fájlt
+fetch('projects.json')
+  .then(response => response.json())
+  .then(projects => {
+    projects.forEach((proj, index) => {
+      const card = document.createElement('div');
+      card.classList.add('project-card');
+      card.style.animationDelay = `${0.2 * index}s`; // fokozatos animáció
+      card.innerHTML = `
+        <img src="${proj.image}" alt="${proj.name}" style="width:100%; border-radius:10px; margin-bottom:10px;">
+        <h3>${proj.name}</h3>
+        <p>${proj.description}</p>
+        <a href="${proj.link}" target="_blank">Megnézem</a>
+      `;
+      container.appendChild(card);
+    });
+  })
+  .catch(error => console.error('Hiba a JSON betöltésénél:', error));
+
