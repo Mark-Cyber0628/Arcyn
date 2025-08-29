@@ -88,3 +88,35 @@ nav {
   color: #00ccff;
   transform: scale(1.2);  /* enyhe nagyítás hoverre */
 }
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+}
+
+.intro-box {
+  max-width: 900px;
+  background: rgba(0, 0, 0, 0.5); /* átlátszó fekete */
+  backdrop-filter: blur(8px);      /* üveges hatás */
+  border-radius: 20px;
+  padding: 40px;
+  color: #fff;
+  line-height: 1.8;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 2s ease;
+}
+
+.intro-box h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00ccff;
+  text-align: center;
+}
+
+.intro-box p {
+  margin-bottom: 18px;
+  font-size: 1.1rem;
+  text-align: justify;
+}
