@@ -3,7 +3,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, rgba(0, 13, 190, 0.959),rgb(0, 255, 234), rgb(12, 0, 182));
+    background: linear-gradient(135deg, rgba(0, 13, 190, 0.959),rgb(0, 255, 234), rgb(146, 255, 246), rgb(17, 0, 255));
     color: rgb(255, 255, 255);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -50,4 +50,41 @@ body {
       0 0 20px #0099ff,
       0 0 40px #0066cc;
   }
+}
+header {
+  display: flex;
+  flex-direction: column; /* logó + menü egymás alatt */
+  align-items: center;
+}
+
+nav {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* átlátszó fekete */
+  backdrop-filter: blur(10px);     /* üveges hatás */
+  padding: 15px 0;
+  margin-top: -50px; /* opcionális: kicsit közelebb a logóhoz */
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center; /* középre rendezés */
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  display: inline-block;
+    color: #ffffff;           /* kék high-tech */
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00ccff;
+  transform: scale(1.2);  /* enyhe nagyítás hoverre */
 }
