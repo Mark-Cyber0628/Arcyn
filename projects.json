@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Github",
+    "description": "Az összes eddig munkám, amiket tanulmányaim során készítettem, megtalálható a GitHub oldalamon.",
+    "link": "https://github.com/Mark-Cyber0628/",
+    "image": "/images/github.png"
+  },
+  {
+    "name": "E-Plant Shopping",
+    "description": "Online növényáruház, ahol a felhasználók vásárolhatnak és böngészhetnek növények között. React segítségével.",
+    "link": "https://mark-cyber0628.github.io/e-plantShopping/",
+    "image": "/images/Eplant.png"
+  }
+]
